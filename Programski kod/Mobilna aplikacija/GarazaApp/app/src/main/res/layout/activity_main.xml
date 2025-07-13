@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:padding="24dp">
+
+    <!-- Grupa: Naslov + Dugmad -->
+    <LinearLayout
+        android:id="@+id/centerGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚗 Vaša garaža"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:layout_marginBottom="32dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔓 Otvori vrata"
+            app:cornerRadius="28dp"
+            app:iconGravity="textStart"
+            android:layout_marginBottom="16dp"
+            app:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔒 Zatvori vrata"
+            app:cornerRadius="28dp"
+            app:iconGravity="textStart"
+            android:layout_marginBottom="16dp"
+            app:backgroundTint="#EF5350"
+            android:textColor="#FFFFFF" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAlarmOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔕 Ugasi alarm"
+            app:cornerRadius="28dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="#FFA726"
+            android:textColor="#FFFFFF" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📜 Historija korištenja"
+            app:cornerRadius="28dp"
+            app:iconGravity="textStart"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="#42A5F5"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
